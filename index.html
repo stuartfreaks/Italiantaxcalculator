@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatore Imposta sul Reddito Italiano</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="italy-flag.png" alt="Italian Flag" class="flag" />
+      <h1>Calcolatore Imposta sul Reddito Italiano</h1>
+      <div class="input-group">
+        <label for="annualSalary">Reddito Annuale (€):</label>
+        <input
+          type="number"
+          id="annualSalary"
+          placeholder="Inserisci il tuo reddito annuale"
+        />
+      </div>
+      <div class="input-group">
+        <label for="dividendIncome">Reddito da Dividendi (€):</label>
+        <input
+          type="number"
+          id="dividendIncome"
+          placeholder="Inserisci il tuo reddito da dividendi"
+        />
+      </div>
+      <button id="calculateButton">Calcolare</button>
+      <div id="results">
+        <h2>Risultati</h2>
+        <p id="totalIncomeAfterTax"></p>
+        <p id="totalTaxDue"></p>
+        <p id="taxOnSalary"></p>
+        <p id="taxOnDividendIncome"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
